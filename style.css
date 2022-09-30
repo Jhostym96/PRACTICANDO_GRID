@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+}
+
+.container {
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 20px;
+    width: 300px;
+    height: 280px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+
+.cuerpo {
+    padding: 15px;
+
+    display: grid;
+
+    row-gap: 20px;
+
+    grid-template-areas:
+
+        "icon . . . ."
+        "title title title title title"
+        "parrafo parrafo parrafo parrafo parrafo"
+        "uno dos tres cuatro cinco"
+        "boton boton boton boton boton"
+
+    ;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    grid-area: icon;
+    background-color: hsl(215, 11%, 22%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon img {
+    width: 12px;
+    height: 12px;
+}
+
+
+
+.title {
+    color: white;
+    grid-area: title;
+    font-size: 20px;
+
+}
+
+.parrafo {
+    grid-area: parrafo;
+    color: white;
+    font-size: 12px;
+    opacity: 0.3;
+}
+
+.uno {
+    grid-area: uno;
+    width: 30px;
+    height: 30px;
+    background-color: hsl(215, 11%, 22%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.dos {
+    grid-area: dos;
+    width: 30px;
+    height: 30px;
+    background-color: hsl(215, 11%, 22%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+
+}
+
+.tres {
+    grid-area: tres;
+    width: 30px;
+    height: 30px;
+    background-color: hsl(215, 11%, 22%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+
+
+}
+
+.cuatro {
+    grid-area: cuatro;
+    width: 30px;
+    height: 30px;
+    background-color: hsl(215, 11%, 22%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+
+}
+
+.cinco {
+    grid-area: cinco;
+    width: 30px;
+    height: 30px;
+    background-color: hsl(215, 11%, 22%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+
+}
+
+.button {
+    height: 30px;
+    grid-area: boton;
+    background-color: hsl(25, 97%, 53%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    color: white;
+    letter-spacing:1px;
+    font-size:12px;
+}
